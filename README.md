@@ -39,7 +39,7 @@ Here's a breakdown of the repository structure:
 
    ```
 
-# 🌟 Inspiration
+## 🌟 Inspiration
 
 These dotfiles were inspired by the following:
 
@@ -47,10 +47,10 @@ These dotfiles were inspired by the following:
 - Author 2: The powerful Vim setup and plugins.
 - Author 3: The comprehensive Zsh customization.
 
-🧾 License
+## 🧾 License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-✉️ Contact
+## ✉️  Contact
 
 If you have any questions or suggestions, you can reach me <francescocalicchio@hotmail.com>.
