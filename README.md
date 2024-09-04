@@ -12,8 +12,9 @@ This is my Dotfiles configuration. Here, you can find inspiration, just as I fou
 - **Tmux Configuration**: Personalized `tmux/tmux.conf` for a better terminal multiplexer experience.
 - **btop** For easy monitoring of the pc.
 - **yabay** Tiling window manager.
-- **skhd** For keyboards shortcut with yabai
-- **Karabiner** For keyboard mapping
+- **skhd** For keyboards shortcut with yabai.
+- **zed** My zed config.
+- **Karabiner** For keyboard mapping.
 
 ## 🛠️ Installation
 
@@ -37,7 +38,12 @@ Breakdown of the repository structure:
 ├── zsh/                  # Zsh configuration
 ├── git/                  # Git configuration
 ├── tmux/                 # Tmux configuration
-├── scripts/              # Custom scripts and utilities
+├── zed/                  # Zed configuration
+├── btop/                 # Btop configuration
+├── yabai/                # Yabai configuration
+├── skhd/                 # Skhd configuration
+├── karabiner/            # Karabiner configuration
+├── Brewfile                # HomeBrew configuration
 └── setup.sh              # Installation script
 
    ```
