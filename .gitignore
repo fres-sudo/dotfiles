@@ -1,0 +1,8 @@
+# Git aliases, identification info
+!.gitconfig
+# The gitignore of this repository itself (!)
+!.gitignore
+
+github-copilot/
+
+

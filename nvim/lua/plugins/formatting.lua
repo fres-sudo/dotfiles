@@ -1,3 +1,5 @@
+M = {}
+
 return {
   "stevearc/conform.nvim",
   dependencies = { "mason.nvim" },
@@ -60,7 +62,6 @@ return {
         html = { "prettier" },
         json = { "prettier" },
         yaml = { "prettier" },
-        markdown = { "prettier" },
         graphql = { "prettier" },
         lua = { "stylua" },
         python = { "isort", "black" },

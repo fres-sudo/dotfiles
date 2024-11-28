@@ -1,5 +1,4 @@
 return {
-  --nice notification
   {
     "folke/noice.nvim",
     opts = function(_, opts)
@@ -13,6 +12,13 @@ return {
 
       opts.presets.lsp_doc_border = true
     end,
+  },
+  -- notify
+  {
+    "rcarriga/nvim-notify",
+    opts = {
+      timeout = 10000,
+    },
   },
   --logo
   {
@@ -33,5 +39,18 @@ return {
       logo = string.rep("\n", 8) .. logo .. "\n\n"
       opts.config.header = vim.split(logo, "\n")
     end,
+  },
+  --zen mode
+  {
+    "folke/zen-mode.nvim",
+    cmd = "ZenMode",
+    opts = {
+      plugins = {
+        gitsigns = true,
+        tmux = true,
+        kitty = { enabled = false, font = "+2" },
+      },
+    },
+    keys = { { "<leader>z", "<cmd>ZenMode<cr>", desc = "Zen Mode" } },
   },
 }

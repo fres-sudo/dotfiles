@@ -52,6 +52,7 @@ return {
     dependencies = {
       {
         "nvim-telescope/telescope-fzf-native.nvim",
+        "nvim-telescope/telescope-live-grep-args.nvim",
         build = "make",
       },
       "nvim-telescope/telescope-file-browser.nvim",
@@ -158,13 +159,23 @@ return {
       opts.defaults = vim.tbl_deep_extend("force", opts.defaults, {
         wrap_results = true,
         layout_strategy = "horizontal",
-        layout_config = { prompt_position = "top" },
+        layout_config = { prompt_position = "bottom" },
         sorting_strategy = "ascending",
         winblend = 0,
         mappings = {
           n = {},
         },
-        file_ignore_patterns = { "^vendor/" , "node_modules", },
+        file_ignore_patterns = {
+          "^vendor/",
+          "node_modules",
+          ".build",
+          ".fvm",
+          ".mason",
+          ".vscode",
+          ".dart_tool",
+          ".git",
+          ".idea",
+        },
       })
       opts.pickers = {
         diagnostics = {
@@ -208,6 +219,7 @@ return {
       telescope.setup(opts)
       require("telescope").load_extension("fzf")
       require("telescope").load_extension("file_browser")
+      telescope.load_extension("live_grep_args")
     end,
   },
 }
