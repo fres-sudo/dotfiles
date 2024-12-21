@@ -11,6 +11,8 @@ return {
         "rust",
         "http",
         "java",
+        "typescript",
+        "javascript",
         "sql",
       },
     },

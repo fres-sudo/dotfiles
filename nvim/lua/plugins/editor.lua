@@ -159,7 +159,7 @@ return {
       opts.defaults = vim.tbl_deep_extend("force", opts.defaults, {
         wrap_results = true,
         layout_strategy = "horizontal",
-        layout_config = { prompt_position = "bottom" },
+        --layout_config = { prompt_position = "bottom" },
         sorting_strategy = "ascending",
         winblend = 0,
         mappings = {
@@ -219,7 +219,7 @@ return {
       telescope.setup(opts)
       require("telescope").load_extension("fzf")
       require("telescope").load_extension("file_browser")
-      telescope.load_extension("live_grep_args")
+      require("telescope").load_extension("live_grep_args")
     end,
   },
 }

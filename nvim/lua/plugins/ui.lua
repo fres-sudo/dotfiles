@@ -17,7 +17,10 @@ return {
   {
     "rcarriga/nvim-notify",
     opts = {
-      timeout = 10000,
+      timeout = 3000,
+      render = "compact",
+      stages = "fade",
+      top_down = false,
     },
   },
   --logo
