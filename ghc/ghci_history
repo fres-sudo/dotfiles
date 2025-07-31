@@ -1,3 +1,47 @@
+filter odd [1..10]
+filter (>= 10) [1..20]
+filter (> 10) [1..20]
+filter (< 10) [1..20]
+filter < 10 [1..20]
+filter < [1..20]
+:t filter
+odd [1..10]
+filter odd [1..10]
+foldl (\a b -> a && even b) True [2,4,5,8] 
+foldl (\a b -> a && odd b) True [2,4,5,8] 
+foldl (\a b -> a && even b) True [2,4,5,8] 
+:t foldr
+:t foldl
+foldl (\a b -> a && b) True [2,4,5,8] 
+foldl (\a b -> a && b) True [2,4,5,8] 
+foldl (\a b -> a && even b) True [2,4,5,8] 
+foldr (\a b -> if a > b then a-b else a+b) 0 [4,3,2,1]
+foldr (\a b -> if a > b then a-b else a+b) 0 [4,3,2,1
+[sum[1..z] | z <- [1..10]]
+[z | z <- [1..10]]
+:i cler
+clear
+1 + 2 + 3 + 4 + 5
+sum (take 5 [z | z <- [1..10]])
+sum (take 5 [z | z <- [1..3]])
+take 31 ([x |x  <- [1..20]])
+take 21 ([x |x  <- [1..20]])
+take 5 ([x |x  <- [1..20]])
+take 5 ([x |x  <- [1,...,20]])
+take 5 ([x |x  <- [1,...20]])
+take 5 ([x |x  <- [1,..,20]])
+take 5 ([x |x  <- [1,20]])
+take 5 ([x | <- [1,20]])
+take 5 (è[x | <- [1,20]])
+take 5 [x | <- [1,20]]
+take 5 [1,2,3,4,5,6,7]
+clear
+main
+main
+main()
+main
+main
+concatena ["casa", "pari", "di", "un", "tre"] 
 concatena ["casa", "pari", "di", "un", "tre"] 
 concatena ["casa", "pari", "di", "un", "tre", "qua"] 
 :r
@@ -54,47 +98,3 @@ evenMed [1,2,3,4]
 :r
 :r
 somma [1,2,3,4,5,6,7,8,9,10]
-somma [1,2,3,4]
-:r
-:r
-dispari [1,2,3,4,5]
-:r
-:
-:r
-pari [1,2,3,4,5,6]
-pari [1,2,3]
-:r
-:r
-pari [1,2,3]
-pari [1,2,3]
-:r
-:r
-:r
-pari [1,2,3]
-:r
-pari [1,2,3]
-:r
-pari [8,9,8,82,4]
-pari [1,2,3]
-:r
-:r
-prods [9,9,9,9,9,9,9,9,9,99]
-prods []
-prods [1,3,4,5]
-:r
-disgiunzioni [False, True]
-disgiunzioni [False, False]
-:r
-congiunzioni [True, False]
-congiunzioni [True, True]
-:r
-congiunzioni [True, True]
-congiunzioni [True, False]
-:r
-:R
-:r
-negazioni [True]
-negazioni []
-negazioni [True, False]
-negazioni [True, Fasle]
-:r

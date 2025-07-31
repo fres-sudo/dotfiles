@@ -29,5 +29,12 @@
       "cmd-9": ["pane::ActivateItem", 8],
       "cmd-0": "pane::ActivateLastItem"
     }
+  },
+  {
+    "context": "Editor && mode == full",
+    "use_key_equivalents": true,
+    "bindings": {
+      "cmd-i": "assistant::InlineAssist"
+    }
   }
 ]

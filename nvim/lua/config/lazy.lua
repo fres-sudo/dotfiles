@@ -5,6 +5,10 @@ if not vim.loop.fs_stat(lazypath) then
   -- stylua: ignore
   vim.fn.system({ "git", "clone", "--filter=blob:none", "https://github.com/folke/lazy.nvim.git", "--branch=stable", lazypath })
 end
+
+vim.keymap.set("n", "sf", function()
+  require("fzf-lua").files({ cwd = vim.fn.getcwd() })
+end, { noremap = true, silent = true, desc = "Open file browser with fzf-lua" })
 vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 require("lazy").setup({
   spec = {
